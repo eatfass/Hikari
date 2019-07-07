@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>Hikari | Wanita</title>
+    <link href="img/icon-link.png" rel="shortcut icon"/>
+
+    <script type="text/javascript">
+        /*<JS Besteller>*/
+        $(document).ready(function(){
+        $('.carousel[data-type="multi"] .item').each(function(){
+            var next = $(this).next();
+            if (!next.length) {
+             next = $(this).siblings(':first');
+         }
+      next.children(':first-child').clone().appendTo($(this));
+  
+        for (var i=0;i<4;i++) {
+        next=next.next();
+        if (!next.length) {
+        next = $(this).siblings(':first');
+    	}
+    
+        next.children(':first-child').clone().appendTo($(this));
+         }
+        });
+    });
+    /*<Akhir JS Bestseller>*/
+    </script>
+    
+</head>
+<body>
+    <div class="container">
+    <div class="logo"><a href="index.html"><img src="img/longlogo2.png"></a></div>
+        <nav>
+            <ul>
+                 <li><a href="wanita.html" style="font-weight: bold;"> WANITA</a></li>
+                 <li><a href="pria.html"> PRIA</a></li>
+                 <li><form>
+                    <div class="input-group">
+                        <input type="text" class="form-controll" placeholder=" Search" name="search">
+                    </div>
+                </form></li>
+                <li><a href="login.html"><img src="img/profil.png"></a></li>
+                <li><a href="whistlist.html"><img src="img/love.png"></a></li>
+                <li><a href="chart.html"><img src="img/trolin.png"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                            </ol>
+                        
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <img src="img/home1.png" alt="" style="width:100%;">
+                              </div>
+                        
+                              <div class="item">
+                                <img src="img/home2.png" alt="" style="width:100%;">
+                              </div>
+                            
+                              <div class="item">
+                                <img src="img/home3.png" alt="" style="width:100%;">
+                              </div>
+                            </div>
+                        
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2 style="text-align: center; padding: 20px;">CATEGORIES</h2>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="#"><img src="img/categories/women/8.png"></a>
+                <p style="text-align: center">Atasan</p>
+            </div>
+
+            <div class="col-md-3">
+                <a href="#"><img src="img/categories/women/5.png"></a>
+                <p style="text-align: center">Bawahan</p>
+            </div>
+
+            <div class="col-md-3">
+                <a href="#"><img src="img/250.png"></a>
+                <p style="text-align: center">Alas Kaki</p>
+            </div>
+                    
+            <div class="col-md-3">
+                <a href="#"><img src="img/categories/women/4.png"></a>
+                <p style="text-align: center">Dress</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 style="text-align: center; padding: 30px">SHOP BESTSELLER</h2>
+    </div>
+            
+            
+    <div class="container">
+        <div class="col-md-10 col-md-offset-1" style="padding: 30px"> 
+        <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/best seller/men/1.png" class="img-responsive"></a><p style="text-align: center">Flamingo Shirt</p><p style="text-align: center">IDR 350.000</p></div>
+                </div>
+                <div class="item">
+                    <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/best seller/men/2.png" class="img-responsive"></a><p style="text-align: center">Blue Sandal</p><p style="text-align: center">IDR 250.000</p></div>
+                </div>
+                <div class="item">
+                    <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/best seller/men/3.png" class="img-responsive"></a><p style="text-align: center">Denim</p><p style="text-align: center">IDR 150.000</p></div>
+                </div>
+                    <div class="item">
+                      <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/best seller/women/1.png" class="img-responsive"></a><p style="text-align: center">Summer Lemon Dress</p><p style="text-align: center">IDR 450.000</p></div>
+                    </div>
+                    <div class="item">
+                      <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/best seller/women/2.png" class="img-responsive"></a><p style="text-align: center">V Women Shirt</p><p style="text-align: center">IDR 350.000</p></div>
+                    </div>
+                    <div class="item">
+                      <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/best seller/women/3.png" class="img-responsive"></a><p style="text-align: center">Women Sandal</p><p style="text-align: center">IDR 150.000</p></div>
+                    </div>
+                    <div class="item">
+                      <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/best seller/men/1.png" class="img-responsive"></a><p style="text-align: center">Flamingo Shirt</p><p style="text-align: center">IDR 350.000</p></div>
+                    </div>
+                    <div class="item">
+                      <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="img/best seller/women/3.png" class="img-responsive"></a><p style="text-align: center">Women Sandal</p><p style="text-align: center">IDR 150.000</p></div>
+                    </div>
+                  </div>
+        </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+
+ <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+                <div class="fixed-footer">
+                        <ul>
+                           <li><a href="#">About</a></li>
+                           <li><a href="#">Term & Condition</a></li>
+                           <li><a href="#"><img src="img/tw.png" style="margin-left: 20px;"></a></li>
+                           <li><a href="#"><img src="img/ig.png"></a></li>
+                           <li><img src="img/pay.png" style="margin-left: 1030px"></li>
+                         </ul>
+                         <p>&copy; 2019, Hikari</p>
+                   </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
