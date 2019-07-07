@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: Myriad Pro;
+}
+
+/*<Bagian Header>*/
+nav {
+    width: 100%;
+    background: #ffff80;
+    overflow: auto;
+
+}
+
+nav a {
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: Myriad Pro;
+    color: #616161;
+    text-align: center;
+}
+
+nav a:hover{
+    background: #ffff9e;
+    color: #616161;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.logo img {
+    position:absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 120px;
+}
+
+ul {
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;
+}
+
+li {
+    float: left;
+}
+
+input.form-controll {
+    margin: 18px 70px;
+    margin-right: 60px; 
+    padding: 0 5px;
+    padding-right: 120px;
+    border: 0;
+} 
+
+.glyphicon-search {
+    font-size: 20px;
+}
+/*<Bagian Header Akhir>*/
+
+
+/*<Bagian Footer>*/
+.fixed-footer {
+padding-bottom: 20px;
+width: auto;
+position: bottom;        
+background: #ffff80;
+color: #636363;
+}
+
+.fixed-footer p {
+    font-size: 12px;
+    margin: 25px;
+    margin-left: 27px;
+
+}
+
+.fixed-footer ul li a{
+    color: #616161;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.fixed-footer ul {
+    padding: 5px;
+    margin: 0 0 0 10px;
+    list-style: none;
+}
+
+.fixed-footer li {
+    float: left;
+}
+
+.fixed-footer {
+    bottom: 0;
+}
+/*<Bagian Footer Akhir>*/  
+
+        
+/*<Bagian Slide Bestseller>*/
+.carousel-control     		 { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+@media (max-width: 767px) {
+.carousel-inner .active.left { left: -100%; }
+.carousel-inner .next        { left:  100%; }
+.carousel-inner .prev		 { left: -100%; }
+.active > div { display:none; }
+.active > div:first-child { display:block; }
+}
+
+@media (min-width: 767px) and (max-width: 992px ) {
+.carousel-inner .active.left { left: -50%; }
+.carousel-inner .next        { left:  50%; }
+.carousel-inner .prev		 { left: -50%; }
+.active > div { display:none; }
+.active > div:first-child { display:block; }
+.active > div:first-child + div { display:block; }
+}
+
+@media (min-width: 992px ) {
+.carousel-inner .active.left { left: -16.7%; }
+.carousel-inner .next        { left:  16.7%; }
+.carousel-inner .prev		 { left: -16.7%; }	
+}
+/*<Bagian Akhir Bestseller>*/

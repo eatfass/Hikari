@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/angular-1.7.5/angular.min.js" type="text/javascript"></script>
+
+    <title>Hikari | Payment</title>
+    <link href="img/icon-link.png" rel="shortcut icon"/>
+
+    <style>
+
+    input:invalid{
+        background: #F9F9F9;
+        }
+
+      .input-form{
+        width:98%;
+        background:#F9F9F9;
+        margin:0.9%;
+        padding:10px;
+        border: none;
+        border-radius: 5px;
+        }
+
+      .input-form-cat{
+        width:98%;
+        height: 60px;
+        background:#F9F9F9;
+        margin:0.9%;
+        padding:10px;
+        border: none;
+        border-radius: 5px;
+        }
+
+      .input-form-number{
+        width:22%;
+        background:#F9F9F9;
+        margin:1%;
+        padding:10px;
+        border: none;
+        border-radius: 5px;
+        }
+
+      .input-form-value{
+        width:51%;
+        background:#F9F9F9;
+        margin:1%;
+        padding:10px;
+        border: none;
+        border-radius: 5px;
+        }
+
+      .btn-form-pesan{
+        color:#80c9c3;
+        background: #ffff80;
+        font-weight: bold;
+        border:none;
+        border-radius:5px;
+        padding:10px;
+        margin:10px;
+        margin-top: 15px;
+        width: 35%;
+        float:right;
+        cursor: pointer;
+        height: 50px;
+        }
+
+      .btn-form-batal:hover{
+        background: #fc7979;
+        }
+
+      .btn-form-pesan:hover{
+        background:#ffff9e;
+        }
+
+      table {
+        margin-top: 5px;
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #ddd;
+        }
+
+      th, td {
+        background: white;
+        }
+
+      th:hover {
+        box-shadow:2px 0px 10px 0px #F4F4F4;
+        border: 1px solid white;
+        }
+      th{
+        border: 1px solid white;
+        }
+     
+      .input-form-value{
+        width:49%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <div class="logo"><a href="index.html"><img src="img/longlogo2.png"></a></div>
+        <nav>
+            <ul>
+                 <li><a href="wanita.html"> WANITA</a></li>
+                 <li><a href="pria.html"> PRIA</a></li>
+                 <li><form>
+                    <div class="input-group">
+                        <input type="text" class="form-controll" placeholder=" Search" name="search">
+                    </div>
+                </form></li>
+                <li><a href="login.html"><img src="img/profil.png"></a></li>
+                <li><a href="whistlist.html"><img src="img/love.png"></a></li>
+                <li><a href="chart.html"><img src="img/trolin.png"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container" style="margin-top: 30px;">
+            <h4 style="text-align: center; font-weight: bold;">PAYMENT</h4>
+            <form class="" action="index.html" method="post">
+              <label>Jumlah Barang</label><br>
+              <input required oninvalid="this.setCustomValidity('Masukkan jumlah barang')" oninput="setCustomValidity('')" class="input-form-number laf" type="number" name="" value="1" placeholder="Jumlah" ng-model="jumlah">
+              <input disabled required class="input-form-number" type="number" name="" value="20000" ng-model="harga" ng-init="harga=150000">
+              <input disabled required class="input-form-value" type="number" name="" value="{{jumlah*harga}}" placeholder="IDR" ng-model="Hasil">
+        
+              <div style="overflow-x:auto;">
+                <label>Pilih Metode Pembayaran</label>
+                <table border=0 cellpadding="10">
+                  <tr>
+                    <th><input required oninvalid="this.setCustomValidity('pilih metode pembayaran')" oninput="setCustomValidity('')" type="radio" name="cek" value=""><img src="img/paymen/bni.png" width="60px" height="20px"></th>
+                    <th><input type="radio" name="cek" value=""><img src="img/paymen/bca.png" width="60px" height="20px"></th>
+                    <th><input type="radio" name="cek" value=""><img src="img/paymen/bri.png" width="60px" height="20px"></th>
+                    <th><input type="radio" name="cek" value=""><img src="img/paymen/alfa3.png" width="60px" height="20px"></th>
+                    <th><input type="radio" name="cek" value=""><img src="img/paymen/indomaret.png" width="60px" height="20px"></th>
+                    
+                  </tr>
+                </table>
+              </div>
+              <br>
+              <br>
+              <button class="btn-form-pesan" style="position: center;">Pay Now</button>
+            </form>
+          </div>
+
+
+    <div class="container" style="margin-top: 300px;">
+        <div class="row">
+            <div class="col-md-12">
+                    <div class="fixed-footer">
+                            <ul>
+                               <li><a href="#">About</a></li>
+                               <li><a href="#">Term & Condition</a></li>
+                               <li><a href="#"><img src="img/tw.png" style="margin-left: 20px;"></a></li>
+                               <li><a href="#"><img src="img/ig.png"></a></li>
+                               <li><img src="img/pay.png" style="margin-left: 990px"></li>
+                             </ul>
+                             <p>&copy; 2019, Hikari</p>
+                       </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
